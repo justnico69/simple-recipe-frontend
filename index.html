@@ -33,7 +33,7 @@
       max-width: 650px;
       background-color: white;
       padding: 30px;
-      margin: 30px;
+      margin: 35px;
     }
 
     .img-egg{
@@ -44,6 +44,7 @@
     header p {
       font-family: 'Outfit';
       font-size: 16px;
+      line-height: 23px;
     }
 
     header h1 {
@@ -55,15 +56,25 @@
       background-color: hsl(330, 100%, 98%);
       padding: 15px;
       border-radius: 10px;
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
+
     .preparation h3 {
       color: hsl(332, 51%, 32%);
       font-family: 'Outfit';
     }
+
     .preparation ul{
       line-height: 30px;
       font-family: 'Outfit';
     }
+    .preparation ul li {
+      padding-left: 15px;
+    }
+     .preparation ul li::marker {
+      color: hsl(332, 51%, 32%);
+     }
 
     .ingredients h2 {
       font-family: 'Young Serif';
@@ -76,15 +87,34 @@
       font-family: 'Outfit';
     }
 
+    .ingredients ul li {
+      padding-left: 15px;
+    }
+
+    .ingredients ul li::marker {
+      color: hsl(14,45%,36%);
+    }
+
 
     .instructions h2 {
       font-weight: 550;
       font-family: 'Young Serif';
       color: hsl(14, 45%, 36%)
     }
+
     .instructions ol {
       font-family: 'Outfit';
       line-height: 30px;
+    }
+
+    .instructions ol li::marker {
+      color: hsl(14, 45%, 36%);
+      font-weight: bold;
+    }
+
+    .instructions ol li {
+      padding-left: 15px;
+      padding-bottom: 7px;
     }
 
 
@@ -92,6 +122,42 @@
       font-weight: 550;
       font-family: 'Young Serif';
       color: hsl(14, 45%, 36%);
+    }
+
+    .nutrition-table p {
+      font-family: 'Outfit';
+      margin-bottom: 15px;
+    }
+
+    .nutrition-table table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .nutrition-table table tr td:last-child {
+      color: hsl(14, 45%, 36%);
+      font-weight: 700;
+    }
+
+    .nutrition-table table tr td:first-child {
+      font-weight: 400;
+    }
+
+    .nutrition-table table tr td {
+      font-family: 'Outfit';
+      padding: 15px ;
+      border-bottom: 1px solid;
+    }
+
+    .nutrition-table table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    hr{
+    height: 0;
+    border: none;
+    border-top: 0.5px solid;
+    margin: 30px 0;
     }
 
     footer{
@@ -149,11 +215,11 @@
     <li><strong>Enjoy</strong>: Serve hot, with additional salt and pepper if needed.</li>
   </ol>
   </section>
-
-  <hr>
+  <hr >
 
   <section class="nutrition-table" >
     <h2>Nutrition</h2>
+    <p>The table below shows nutritional values per serving without the additional fillings.</p>
     <table>
       <tbody>
       <tr>
@@ -181,8 +247,8 @@
   </main>
   
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">justnico</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>
+    Coded by <a href="#">justnico</a>
   </footer>
 </body>
-</html>'
+</html>
